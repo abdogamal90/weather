@@ -14,7 +14,7 @@ function App() {
         <div className="top">
           <div className="name">
             <p>
-              
+              {res.name }
             </p>
           </div>
           <div className="temp">
