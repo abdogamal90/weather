@@ -21,7 +21,15 @@ function App() {
             </p>
           </div>
           <div className="temp">
-            18 {weather.main ? <h1>{Math.round((5/9*(weather.main.temp - 32)))}°F</h1> : null}
+            {weather.main ? <h1>{Math.round((weather.main.temp)*(5/9))}°F</h1> : null}
+          </div>
+        </div>
+        <div className="down">
+          <div className="wind">
+            {weather.wind ? <p>{weather.wind.speed} MPH</p> : null}
+          </div>
+          <div className="humidity">
+            {weather.main?<p>{weather.main.humidity}</p> : null}
           </div>
         </div>
       </div>
